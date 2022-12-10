@@ -1,5 +1,5 @@
 # PPID ⧓ ProcHollow
-**A powershell script that performs parent process ID (PPID) spoofing and process hollowing**
+**A powershell script that performs parent process ID (PPID) spoofing and process hollowing to evade Windows Defender**
 
 ```
                                         _____  _____ _____ _____                            
