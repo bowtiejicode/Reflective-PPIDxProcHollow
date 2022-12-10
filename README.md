@@ -33,10 +33,10 @@
 
 The script has been hardcoded to search for a parent process (svchost.exe) that matches the current logged on user's privilege and spawns a child process (taskhostw.exe). Feel free to edit the script to take in arguments
 
-*I have been using the v1.0 script for quite some time now but it recently triggered an alert for Windows Defender. Decided to improve it to evade again, enjoy script v1.1😀*
+*I developed the v1.0 script and have been using it since OSEP days... but it recently triggered an alert for Windows Defender. Decided to improve it to evade again, enjoy script v1.1😀*
 
-## Demo
-Youtube (Higher resolution): https://www.youtube.com/watch?v=GB59m-KJvd0
+## Demo Video
+YouTube (higher resolution): https://www.youtube.com/watch?v=GB59m-KJvd0
 ![Alt text](480.gif?raw=true "Demo")
 
 ## Usage
@@ -59,11 +59,11 @@ The usage section might make it seem like a 'fileless' approach but it does writ
 
 ## Change Logs
 2022-12-10 -- v1.1
-   - Integrated with PPID
-   - Resolved v1.0 issue on alerting Windows Defender upon spawning cmd.exe from meterpreter shell (Evading latest Win Def as of 10 Dec 2022)
+   - Integrated with PPID spoofing
+   - Evading latest Windows Defender again as of 10 Dec 2022
 
 2021-09-18 -- v1.0
    - Simple Process Hollowing
-   - Windows Defender alert pop up when launch cmd.exe but our meterpreter shell will not die (probably work to resolve this in next ver)
+   - Windows Defender alert pop up when launch cmd.exe but our meterpreter shell will not die
 
 
