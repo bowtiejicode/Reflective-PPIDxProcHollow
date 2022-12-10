@@ -66,4 +66,5 @@ The usage section might make it seem like a 'fileless' approach but it **does wr
    - Simple Process Hollowing
    - Windows Defender alert pop up when launch cmd.exe but our meterpreter shell will not die
 
-
+## Future Developments
+- Disk is lava (IYKWIM)
