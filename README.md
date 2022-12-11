@@ -1,5 +1,5 @@
-# PPID ⧓ ProcHollow
-**A powershell script that performs parent process ID (PPID) spoofing and process hollowing to evade Windows Defender**
+# Reflective PPID ⧓ ProcHollow
+**A powershell script that performs reflective parent process ID (PPID) spoofing and process hollowing to evade Windows Defender**
 
 ```
                                         _____  _____ _____ _____                            
@@ -33,7 +33,7 @@
 
 The script has been hardcoded to search for a parent process (svchost.exe) that matches the current logged on user's privilege and spawns a child process (taskhostw.exe). Feel free to edit the script to take in arguments
 
-*I developed the v1.0 script and have been using it since OSEP days... but it recently triggered an alert for Windows Defender. Decided to improve it to evade again, enjoy script v1.1😀*
+*I developed the v1.0 script and have been using it since OSEP days... but it recently triggered an alert for Windows Defender. Decided to improve it to evade again, enjoy script v1.2😀*
 
 ## Demo Video
 YouTube (higher resolution): https://www.youtube.com/watch?v=GB59m-KJvd0
@@ -72,5 +72,4 @@ The usage section might make it seem like a 'fileless' approach but the v1.1 scr
    - Simple Process Hollowing
    - Windows Defender alert pop up when launch cmd.exe but our meterpreter shell will not die
 
-## Future Developments
-- Disk is lava (IYKWIM)
+
