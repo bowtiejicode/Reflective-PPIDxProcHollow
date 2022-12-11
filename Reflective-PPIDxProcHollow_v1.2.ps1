@@ -107,6 +107,8 @@ function DefineStruct{
 
 }
 
+PrintArt 
+
 #region Module Builder
     $Domain = [AppDomain]::CurrentDomain
     $DynAssembly = New-Object System.Reflection.AssemblyName(([guid]::NewGuid().ToString()))
