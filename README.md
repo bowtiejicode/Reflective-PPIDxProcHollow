@@ -48,10 +48,10 @@ YouTube (higher resolution): https://www.youtube.com/watch?v=GB59m-KJvd0
 ## Disclaimer
 As we are performing parent process ID spoofing, it can be detected via Event Tracing for Windows (EWT).
 
-## Evading AV/EDR
+## Evading AV
 - The v1.0 script creates an alert on Windows Defender upon launching cmd.exe from meterpreter shell. However, your meterpreter shell will still be **kept alive** despite the alert.
 - The v1.1 script eradicates the issue of v1.0 and it also makes the process looks more legitimate by spawning it under another parent process through PPID Spoofing. 
-- The v1.2 script evades more AV/EDR due to it not touching disk at all 😁
+- The v1.2 script evades more AV due to it not touching disk at all 😁
 
 ## Change Logs
 2022-12-12 -- v1.2
