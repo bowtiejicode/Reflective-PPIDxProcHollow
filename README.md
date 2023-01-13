@@ -66,3 +66,7 @@ As we are performing parent process ID spoofing, it can be detected via Event Tr
 2021-09-18 -- v1.0
    - Simple Process Hollowing
    - Windows Defender alert pop up when launch cmd.exe but our meterpreter shell will not die
+   
+## Future Improvements
+- Attempt to remove userland EDR hooks
+- ETW patching
