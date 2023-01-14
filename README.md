@@ -70,3 +70,4 @@ As we are performing parent process ID spoofing, it can be detected via Event Tr
 ## Future Improvements
 - Attempt to remove userland EDR hooks
 - ETW patching
+- AMSI bypass (still contemplating whether it is needed as we evaded Win Def)
